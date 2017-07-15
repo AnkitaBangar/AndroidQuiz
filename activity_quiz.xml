@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#90EE90"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="SCORE"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="43dp"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:text="0"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
+        android:id="@+id/score" />
+
+    <TextView
+        android:text="What is your name?"
+        android:textSize="19dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:id="@+id/question"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_toStartOf="@+id/score" />
+
+    <Button
+        android:text="akshay"
+        android:background= "#2E8B57"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choice2"
+        android:onClick="onClick"
+        android:layout_marginTop="70dp"
+        android:layout_alignTop="@+id/choice1"
+        android:layout_alignStart="@+id/choice1"
+        android:layout_alignEnd="@+id/choice1" />
+
+    <Button
+        android:text="aa"
+        android:background="#2E8B57"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/choice3"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/choice4"
+        android:onClick="onClick"
+        android:layout_alignEnd="@+id/choice3" />
+
+    <Button
+        android:text="nitish"
+
+        android:background="#2E8B57"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choice3"
+        android:onClick="onClick"
+        android:layout_above="@+id/choice4"
+        android:layout_alignStart="@+id/choice2"
+        android:layout_marginBottom="18dp"
+        android:layout_alignEnd="@+id/choice2" />
+
+    <Button
+        android:text="ankita"
+        android:background="#2E8B57"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choice1"
+        android:onClick="onclick"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/score"
+        android:layout_alignStart="@+id/question" />
+</RelativeLayout>
